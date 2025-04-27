@@ -1,0 +1,16 @@
+N = int(input())
+arr = []
+
+for i in range(N):
+    a, b = input().split()
+    arr.append((int(a), b))
+result = []
+
+for i in range(len(arr)):
+    result.append((arr[i][0],i, arr[i][1]))
+
+result.sort()
+
+for a, b,c in result:
+    print(a,c)
+    
